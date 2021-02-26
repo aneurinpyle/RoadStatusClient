@@ -163,7 +163,7 @@ namespace RoadStatusClient.Test.Service
             //Assert
             ArgumentException ex = Assert.ThrowsAsync<ArgumentException>(() => roadStatusService.GetRoadStatusFromApiAsync("A2"));
 
-            Assert.That(ex.Message, Is.EqualTo("Error: Too many API requests and/or App Key supplied is invalid and may have expired. Please check the status of your App Key on the TfL API Developer Portal."));
+            Assert.That(ex.Message, Is.EqualTo("Error: Too many API requests and/or App Key supplied is invalid and may have expired and/or the API URL is invalid. Please check the status of your App Key and the Road API URL on the TfL API Developer Portal."));
             mockApiService.Verify(x => x.GetAsync("https://mockTflApiUrl/A2", _queryParams), Times.Once);
         }
 

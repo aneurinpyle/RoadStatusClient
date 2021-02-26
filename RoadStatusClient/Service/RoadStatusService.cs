@@ -37,8 +37,8 @@ namespace RoadStatusClient.Service
             }
             if (response.StatusCode == HttpStatusCode.NotFound)
                 throw new ArgumentException($"Error: '{roadIds}' is not a valid road or list of roads. Please check the full list of supported road identifiers and try again.");
-            if (response.StatusCode == HttpStatusCode.TooManyRequests) // The API appears to return 'TooManyRequests' when the AppKey is invalid. Should return 401.
-                throw new ArgumentException("Error: Too many API requests and/or App Key supplied is invalid and may have expired. Please check the status of your App Key on the TfL API Developer Portal.");
+            if (response.StatusCode == HttpStatusCode.TooManyRequests) // The API appears to return '429 - TooManyRequests' when the AppKey is invalid. Should return '401 Unauthorized'.
+                throw new ArgumentException("Error: Too many API requests and/or App Key supplied is invalid and may have expired and/or the API URL is invalid. Please check the status of your App Key and the Road API URL on the TfL API Developer Portal.");
             else
             {
                 throw new Exception($"Error: API request failed. Reason: {response.ReasonPhrase}. ErrorCode: {(int)response.StatusCode}.");
