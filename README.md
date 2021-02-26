@@ -27,7 +27,7 @@ To run the code, open `cmd.exe` Command Prompt window and change the directory t
 
 You will then see the application run, with a welcome message and instructions. Enter a road name, such as `A2`, or several roads, such as `A2,A20` using a comma-separated list. This will return the road or roads status information.
 
-If you are not sure of any major roads, you can simply press `Enter`, with no road value entered, and the application will return all major roads, wih their statuses.
+If you are not sure of any major roads, you can simply press `Enter`, with no road value entered, and the application will return all major roads, with their statuses.
 
 If you enter a road that does not exist in the API, an error will appear, stating that the road entered is not a valid road.
 
