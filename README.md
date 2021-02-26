@@ -52,5 +52,5 @@ The application will build and then run all tests, with the test results split i
 
 ## Anything else you think is relevant
 
-- Noticed that the main link to the (TfL APIs)[https://api.tfl.gov.uk/] refers to using both an `app_id` and an `api_key`. Yet the [TfL API Developer Portal](https://api-portal.tfl.gov.uk/) mentions only using an `app_key`, which is effectively an API key. The documentation on the (TfL APIs)[https://api.tfl.gov.uk/] website must be out of date.
+- Noticed that the main link to the [TfL APIs](https://api.tfl.gov.uk/) refers to using both an `app_id` and an `api_key`. Yet the [TfL API Developer Portal](https://api-portal.tfl.gov.uk/) mentions only using an `app_key`, which is effectively an API key. The documentation on the [TfL APIs](https://api.tfl.gov.uk/) website must be out of date.
 - Noticed that the API returns `429` or `TooManyRequests` HTTP Status Code when the AppKey is invalid. Should return HTTP Status Code `401` or `Unauthorized`.
