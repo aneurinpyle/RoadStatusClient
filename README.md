@@ -47,7 +47,7 @@ The application will build and then run all tests, with the test results split i
 
 - Assumed that the user only wants to make one search, before the application closes. A loop could be added in future, with a `quit` command to break the loop and exit the application.
 - Assumed that this application is only for use with the TfL Road API.
-- The [TfL Roads API](https://api-portal.tfl.gov.uk/api-details#api=Road&operation=Road_GetByPathIds) documents several properties, but not all are returned. The `RoadStatusDto` contains all properties listed in this webpage to be mapped to, incase these properties are populated in future. They are likely populated using other `GET` requests for Roads.
+- The [TfL Roads API](https://api-portal.tfl.gov.uk/api-details#api=Road&operation=Road_GetByPathIds) documents several properties, but not all are returned, likely by design - to not return properties with null values. The `RoadStatusDto` contains all properties listed in this webpage to be mapped to, incase these properties are populated in future. They are likely populated using other `GET` requests for Roads.
 - It also stipulates that `ids` request parameter is required, but if the user does not enter a value, all major roads' statuses are returned.
 
 ## Other relevant information
