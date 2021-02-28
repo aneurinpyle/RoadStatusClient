@@ -33,7 +33,7 @@ If you enter a road that does not exist in the API, an error will appear, statin
 
 If the API key or API url is incorrect or invalid, or if the API key used has made too many requests, a warning will appear, asking you to check the values entered in the `appsettings.json` against the [TfL API Developer Portal](https://api-portal.tfl.gov.uk/).
 
-You can also run the application without publishing it using Visual Studio. When the solution file is open, right-click on `RoadStatusClient` project and click `Set as startup project` (It may already be set up as the startup project). You should then see the project name in the toolbar at the top, with a green play button. Click this button, and the application will build and run at the same time. This will also allow you to see the Exit codes once the application has run successfully or not.
+You can also run the application without publishing it using Visual Studio. When the solution file is open, right-click on `RoadStatusClient` project and click `Set as startup project` (it may already be set up as the startup project). You should then see the project name in the toolbar at the top, with a green play button. Click this button, and the application will build and run at the same time. This will also allow you to see the Exit codes once the application has run successfully or unsuccessfully.
 
 ## How to run the tests
 
@@ -52,5 +52,5 @@ The application will build and then run all tests, with the test results split i
 
 ## Other relevant information
 
-- Noticed that the main link to the [TfL APIs](https://api.tfl.gov.uk/) refers to using both an `app_id` and an `api_key`. Yet the [TfL API Developer Portal](https://api-portal.tfl.gov.uk/) mentions only using an `app_key`, which is effectively an API key. The documentation on the [TfL APIs](https://api.tfl.gov.uk/) website must be out of date.
+- Noticed that the main link to the [TfL APIs](https://api.tfl.gov.uk/) refers to using both an `app_id` and an `api_key`. Yet the [TfL API Developer Portal](https://api-portal.tfl.gov.uk/) mentions only using an `app_key`, which is effectively an API key. The documentation on the [TfL APIs](https://api.tfl.gov.uk/) website is likely to be out of date.
 - Noticed that the API returns `429` or `TooManyRequests` HTTP Status Code when the AppKey is invalid. Should return HTTP Status Code `401` or `Unauthorized`.
