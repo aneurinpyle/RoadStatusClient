@@ -1,0 +1,22 @@
+[
+    {
+        "$type": "Tfl.Api.Presentation.Entities.RoadCorridor, Tfl.Api.Presentation.Entities",
+        "id": "a2",
+        "displayName": "A2",
+        "statusSeverity": "Serious",
+        "statusSeverityDescription": "Serious Delays",
+        "bounds": "[[-0.0857,51.44091],[0.17118,51.49438]]",
+        "envelope": "[[-0.0857,51.44091],[-0.0857,51.49438],[0.17118,51.49438],[0.17118,51.44091],[-0.0857,51.44091]]",
+        "url": "/Road/a2"
+    },
+    {
+        "$type": "Tfl.Api.Presentation.Entities.RoadCorridor, Tfl.Api.Presentation.Entities",
+        "id": "a20",
+        "displayName": "A20",
+        "statusSeverity": "Serious",
+        "statusSeverityDescription": "Serious Delays",
+        "bounds": "[[-0.11925,51.40825],[0.14918,51.48643]]",
+        "envelope": "[[-0.11925,51.40825],[-0.11925,51.48643],[0.14918,51.48643],[0.14918,51.40825],[-0.11925,51.40825]]",
+        "url": "/Road/a20"
+    }
+]
